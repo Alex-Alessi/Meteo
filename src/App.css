@@ -1,0 +1,11 @@
+#root {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.navbar {
+  top: 0;
+  position: absolute;
+  margin: 0 auto;
+}
