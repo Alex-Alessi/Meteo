@@ -3,8 +3,12 @@
 
 .navbar {
   width: 100%;
-  margin-top: 10px;
+  height: 50px;
   top: 0;
   position: absolute;
-  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
 }
