@@ -1,14 +1,27 @@
-/* #root {
-} */
+body{
+background-color: #bad6d3;
+}
 
-.navbar {
+#root {
+  width: 100%; 
+} 
+
+.myNavbar {
   width: 100%;
-  height: 50px;
+  height: 100px;
   top: 0;
   position: absolute;
-  background-color: white;
+  background-color: #6e9bcc;
+  
+}
+
+.main{
+  text-align: center;
+ 
+}
+
+.myNavbar p{
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-between;
 }

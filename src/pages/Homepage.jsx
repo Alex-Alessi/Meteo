@@ -2,6 +2,7 @@
 // https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=temperature_2m,precipitation,weathercode&timezone=auto URL API
 
 import { useEffect, useState } from "react";
+import Grid from "../components/Grid";
 
 export default function Homepage() {
   const cities = ["Roma", "Milano", "Napoli", "Torino", "Palermo", "Genova"];
@@ -83,18 +84,9 @@ export default function Homepage() {
     fetchWeather();
   }, []);
   return (
-    <>
-      <h1>Meteo</h1>
-      <ul>
-        {weatherData.map((m) => {
-          return (
-            <li key={m.city}>
-              {" "}
-              {m.city}, {m.temperature}°C, {m.weather}
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <div className="main">
+      <h1 style={{color:"black"}}>Meteo</h1>
+      <Grid cities={cities}/>
+    </div>
   );
 }
